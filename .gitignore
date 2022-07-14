@@ -1,0 +1,8 @@
+node_modules
+package-lock.json
+/**/**/*.xml
+/report/**/*.log
+/report/**/*.png
+.DS_Store
+.vscode
+**.xml

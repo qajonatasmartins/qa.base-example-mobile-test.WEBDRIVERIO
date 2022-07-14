@@ -1,0 +1,33 @@
+{
+    "name": "webdriverio-tests",
+    "version": "0.1.0",
+    "author": "Jonatas Faria - @QAJONATASMARTINS",
+    "private": true,
+    "devDependencies": {
+        "@babel/core": "^7.17.9",
+        "@babel/preset-env": "^7.16.11",
+        "@babel/register": "^7.17.7",
+        "@badisi/wdio-harness": "^1.0.4",
+        "@wdio/allure-reporter": "^7.19.5",
+        "@wdio/appium-service": "^7.19.5",
+        "@wdio/cli": "^7.20.5",
+        "@wdio/local-runner": "^7.19.5",
+        "@wdio/mocha-framework": "^7.20.3",
+        "@wdio/selenium-standalone-service": "^7.19.5",
+        "@wdio/spec-reporter": "^7.19.5",
+        "wdio-wait-for": "^2.2.5"
+    },
+    "scripts": {
+        "android": "wdio run ./configs/local/android/android.config.js",
+        "ios": "wdio run ./configs/local/ios/ios.config.js",
+        "ios2": "wdio run ./configs/local/ios/ios.parallel.config.js",
+        "allure-android": "allure serve ./reports/local/android/",
+        "allure-ios": "allure serve ./reports/local/ios/"
+    },
+    "dependencies": {
+        "appium": "^1.22.3",
+        "chai": "^4.3.6",
+        "wdio": "^6.0.1",
+        "webdriverio": "^7.20.5"
+    }
+}
